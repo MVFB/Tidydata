@@ -1,0 +1,24 @@
+run_analysis.R code book.
+
+Raw data: data collected from the accelerometers from the Samsung Galaxy S smartphone obtained from the link http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
+
+Data load: training and test data, including subjects, activities and features are loaded into the code.
+
+Files loaded:
+./train/X_train.txt
+./test/X_test.txt
+./features.txt
+./activity_labels.txt
+./train/y_train.txt
+./test/y_test.txt
+./train/subject_train.txt
+./test/subject_test.txt
+
+Data transformation:
+1. training and test data are merged into object named working_data
+2. variables names are inserted into working_data
+3. extraction of columns which names contain the characters mean or std 
+4. activity data is inserted into working_data
+5. a new data set is created (tidy_data) with the average of each variable for each activity and each subject.
+
+Output: tidy_data, which is a dataset with the average of each variable for each activity and each subject.
